@@ -35,7 +35,21 @@ celsius2kelvin
 <!-- Challenge 1 answer begin -->
 
 -   Valid
+    -   min_height
+
+    -   max.height
+
+    -   MaxLength
+
+    -   celsius2kelvin
+
+    -   .mass
 -   Invalid
+    -   2widths
+
+    -   \_age
+
+    -   min-length
 
 <!-- Challenge 1 answer end -->
 
@@ -52,6 +66,10 @@ age <- age - 20
 
 <!-- Challenge 2 answer begin -->
 
+`mass = 109.25`
+
+`age=102`
+
 <!-- Challenge 2 answer end -->
 
 #### Challenge 3
@@ -62,6 +80,7 @@ Run the code from the previous challenge, and write a command to compare `mass` 
 
 ```{r}
 # comparison code goes here
+mass>age
 ```
 
 <!-- Challenge 3 answer end -->
@@ -74,6 +93,8 @@ Clean up your working environment by deleting the mass and age variables.
 
 ```{r}
 # code goes here
+rm(mass)
+rm(age)
 ```
 
 <!-- Challenge 4 answer end -->
