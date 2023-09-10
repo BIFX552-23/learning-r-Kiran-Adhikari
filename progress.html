@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Project Intro</title>
+<title>Learning R</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,53 +20,19 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
-<script src="exercises_files/libs/clipboard/clipboard.min.js"></script>
-<script src="exercises_files/libs/quarto-html/quarto.js"></script>
-<script src="exercises_files/libs/quarto-html/popper.min.js"></script>
-<script src="exercises_files/libs/quarto-html/tippy.umd.min.js"></script>
-<script src="exercises_files/libs/quarto-html/anchor.min.js"></script>
-<link href="exercises_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="exercises_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="exercises_files/libs/bootstrap/bootstrap.min.js"></script>
-<link href="exercises_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="exercises_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="progress_files/libs/clipboard/clipboard.min.js"></script>
+<script src="progress_files/libs/quarto-html/quarto.js"></script>
+<script src="progress_files/libs/quarto-html/popper.min.js"></script>
+<script src="progress_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="progress_files/libs/quarto-html/anchor.min.js"></script>
+<link href="progress_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="progress_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="progress_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="progress_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="progress_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 
 
 </head>
@@ -79,7 +45,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Project Intro</h1>
+<h1 class="title">Learning R</h1>
 </div>
 
 
@@ -94,78 +60,48 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<p>The exercises in this document follow along closely with <a href="https://swcarpentry.github.io/r-novice-gapminder/02-project-intro.html">Lesson 2</a> of <a href="https://swcarpentry.github.io/r-novice-gapminder/">R for Reproducible Scientific Analysis</a>, provided by the <a href="https://software-carpentry.org/">Software Carpentry</a> community under the creative commons license, <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a>. For more information see <a href="https://carpentries.org/">The Carpentries</a>.</p>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Key Points
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<!-- This file is not intended to be edited -->
+<!-- Render this file to see automated progress updates on your exercises -->
+<section id="setup" class="level2">
+<h2 class="anchored" data-anchor-id="setup">Setup</h2>
+<p>You’ll want to install the following prior to starting this course:</p>
 <ul>
-<li>Use RStudio to create and manage projects with consistent layout.</li>
-<li>Treat raw data as read-only.</li>
-<li>Treat generated output as disposable.</li>
-<li>Separate function definition and application.</li>
+<li><a href="https://posit.co/download/rstudio-desktop/">R and RStudio</a></li>
 </ul>
-</div>
-</div>
-<section id="challenge-1" class="level4">
-<h4 class="anchored" data-anchor-id="challenge-1">Challenge 1</h4>
-<p>Create a self-contained project</p>
-<p>We’re going to turn our Learning-R project into a project in RStudio:</p>
-<ol type="1">
-<li>If you haven’t already, clone your Learning-R project onto your local machine.</li>
-<li>In RStudio, click the “File” menu button, then “New Project”.</li>
-<li>Click “Existing Directory” and locate the directory containing your Learning-R project.</li>
-<li>Click the “Create Project” button.</li>
-</ol>
+<p>On a related note, if you are a student (i.e.&nbsp;if you must have a ‘.edu’ email and a student ID card), you should check out the <a href="https://education.github.com/pack">GitHub Student Developer Pack</a>. It comes with all sorts of freebies and discounts for developer tools including things like training, GitHub Pro, JetBrains, Microsoft Azure, Codespaces, and GitKraken.</p>
 </section>
-<section id="challenge-2" class="level4">
-<h4 class="anchored" data-anchor-id="challenge-2">Challenge 2</h4> <img src="score1.png">
-<p>Open an RStudio project through the file system</p>
-<ol type="1">
-<li>Exit RStudio.</li>
-<li>Open to your Learning-R project directory in the File Explorer or Finder app.</li>
-<li>Double click the <code>.Rproj</code> file in the root directory of your course project repository.</li>
-<li>Open your copy of <code>Modules/02-Project_Intro/exercises.qmd</code> in RStudio.</li>
-<li>Take a screenshot of your RStudio session and place it in the <code>Modules/02-Project-Intro/</code> directory. It should have “Learning-R - main - RStudio” in the header (or something similar).</li>
-<li>Modify the line just below this to include your screenshot (you should just need to replace “screenshot.png” with the name of your screenshot file).</li>
-</ol>
-<!-- Challenge 2 answer begin -->
-<p><img src="Screenshot%202023-09-09%20at%208.28.07%20PM.png" class="img-fluid" alt="Screenshot"></p>
-<!-- Challenge 2 answer end -->
-</section>
-<section id="challenge-3" class="level4">
-<h4 class="anchored" data-anchor-id="challenge-3">Challenge 3</h4> <img src="score2.png">
-<p>You should have installed the <code>gapminder</code> package. If you are following along with the Software Carpentry notes, they ask us to download the gapminder data set at this point. Instead, we’ll load it directly from the <code>gapminder</code> package (i.e.&nbsp;all you need to do for this challenge is be sure the <code>gapminder</code> package is installed).</p>
-<!-- Challenge 3 answer begin -->
+<section id="your-progress" class="level2">
+<h2 class="anchored" data-anchor-id="your-progress">Your progress</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gapminder)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(gapminder)</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># let's take a look at the data we'll be working with</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>gapminder</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 1,704 × 6
-   country     continent  year lifeExp      pop gdpPercap
-   &lt;fct&gt;       &lt;fct&gt;     &lt;int&gt;   &lt;dbl&gt;    &lt;int&gt;     &lt;dbl&gt;
- 1 Afghanistan Asia       1952    28.8  8425333      779.
- 2 Afghanistan Asia       1957    30.3  9240934      821.
- 3 Afghanistan Asia       1962    32.0 10267083      853.
- 4 Afghanistan Asia       1967    34.0 11537966      836.
- 5 Afghanistan Asia       1972    36.1 13079460      740.
- 6 Afghanistan Asia       1977    38.4 14880372      786.
- 7 Afghanistan Asia       1982    39.9 12881816      978.
- 8 Afghanistan Asia       1987    40.8 13867957      852.
- 9 Afghanistan Asia       1992    41.7 16317921      649.
-10 Afghanistan Asia       1997    41.8 22227415      635.
-# ℹ 1,694 more rows</code></pre>
+<div class="cell-output-display">
+<table class="table table-sm table-striped small">
+<colgroup>
+<col style="width: 44%">
+<col style="width: 55%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Lesson</th>
+<th style="text-align: center;">Score</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><a href="Modules/01-RStudio-Intro/exercises.html">01 RStudio Intro</a></td>
+<td style="text-align: center;"><a href="Modules/01-RStudio-Intro/"><img src="Modules/01-RStudio-Intro/score0.png"></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="Modules/02-Project-Intro/exercises.html">02 Project Intro</a></td>
+<td style="text-align: center;"><a href="Modules/02-Project-Intro/"><img src="Modules/02-Project-Intro/score0.png"></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="Modules/03-Seeking-Help/exercises.html">03 Seeking Help</a></td>
+<td style="text-align: center;"><a href="Modules/03-Seeking-Help/"><img src="Modules/03-Seeking-Help/score0.png"></a></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
-<!-- Challenge 3 answer end -->
 </section>
 
 </main>

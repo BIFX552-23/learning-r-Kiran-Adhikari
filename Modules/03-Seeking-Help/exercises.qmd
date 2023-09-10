@@ -26,7 +26,11 @@ c(1, 2, 'f')
 
 <!-- Challenge 1 answer begin -->
 
-First command results in a numeric vector. The second results in a character vector. The third command results in character vector, because it includes character values.
+First command results in a numeric vector.
+
+The second results in a character vector.
+
+The third command results in character vector, because it includes character values.
 
 <!-- Challenge 1 answer end -->
 
